@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: purple;
+    background-image: url("./images/backdrop.png");
+    background-size: 110%;
+    
+
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    /*background-color: burlywood; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-image: url("./images/soil2.jpg");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+} 
+
+#board div {
+    width: 180px;
+    height: 180px;
+    background-image: url("./images/Hole.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#board div img {
+    width: 200px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
