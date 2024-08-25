@@ -39,7 +39,7 @@ function setMole() {
     }
 
     let mole = document.createElement("img");
-    mole.src = "../images/Mole.png";
+    mole.src = "images/Mole.png";
 
     let num = getRandomTile();
     if (currentPlantTile && currentPlantTile.id == num) {
@@ -60,7 +60,7 @@ function setPlant() {
     }
 
     let plant = document.createElement("img");
-    plant.src = "../images/Avocado.png";
+    plant.src = "images/Avocado.png";
 
     let num = getRandomTile();
     if (currentMoleTile && currentMoleTile.id == num) {
