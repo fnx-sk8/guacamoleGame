@@ -3,43 +3,107 @@ body {
     text-align: center;
     background-color: purple;
     background-image: url("./images/backdrop.png");
-    background-size: 110%;
-    
-
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
-#board {
-    width: 540px;
-    height: 540px;
-    /*background-color: burlywood; */
+h3 {
+    display: inline-block;
+    /* Makes the rectangle wrap the text */
+    background: rgba(0, 0, 0, 0.7);
+    /* Dark semi-transparent background */
+    color: rgb(214, 214, 214);
+    /* Ensures high contrast */
+    padding: 10px 15px;
+    /* Adds spacing inside the box */
+    border-radius: 5px;
+    /* Softens the edges */
+    font-size: 1.2em;
+    /* Adjust size for readability */
+}
 
-    margin: 0 auto;
+/* Responsive Board */
+#board {
+    width: 90vw;
+    /* Adjust width dynamically */
+    max-width: 540px;
+    /* Prevent excessive scaling on larger screens */
+    height: 90vw;
+    max-height: 540px;
     display: flex;
     flex-wrap: wrap;
-
+    margin: 0 auto;
     background-image: url("./images/soil2.jpg");
     background-size: cover;
     border: 3px solid white;
     border-radius: 25px;
-} 
+}
 
+/* Responsive Board Slots */
 #board div {
-    width: 180px;
-    height: 180px;
+    width: 30%;
+    /* Flexible for different screen sizes */
+    height: 30%;
     background-image: url("./images/Hole.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: center;
+    background-position: center;
 }
 
+/* Responsive Images */
 #board div img {
-    width: 200px;
-    height: 100px;
-
+    width: 100%;
+    max-width: 150px;
+    /* Prevents oversized images */
+    height: auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-
 }
+
+
+h1,
+h3,
+h2 {
+    margin: 2px 0;
+    /* Reduce vertical spacing */
+    padding: 0;
+    /* Remove any default padding */
+}
+
+p {
+    margin: 2px 0;
+    /* Reduce space around <p> */
+}
+
+#score {
+    margin-top: 10px;
+    /* Adjust spacing above the score */
+    font-size: 2em;
+    /* Ensure it remains visible */
+}
+
+#board {
+    margin-top: 10px;
+    /* Reduce space above the board */
+}
+
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 600px) {
+    #board {
+        width: 95vw;
+        height: 95vw;
+    }
+
+    #board div img {
+        max-width: 100px;
+    }
+
+    
+}
+

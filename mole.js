@@ -85,4 +85,6 @@ function selectTile (){
         document.getElementById("score").innerText = "GAME OVER: " + score.toString();
         gameOver = true; 
     }
+
+    
 }
