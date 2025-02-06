@@ -3,24 +3,39 @@ body {
     text-align: center;
     background-color: purple;
     background-image: url("./images/backdrop.png");
-    background-size: 110%;
+    background-size: 125%;
     background-position: center;
     margin: 0;
     padding: 0;
 }
 
-h3 {
+h3{
     display: inline-block;
     /* Makes the rectangle wrap the text */
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(210, 208, 208, 0.7);
     /* Dark semi-transparent background */
-    color: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
     /* Ensures high contrast */
     padding: 10px 15px;
     /* Adds spacing inside the box */
     border-radius: 5px;
     /* Softens the edges */
     font-size: 1.2em;
+    /* Adjust size for readability */
+}
+
+h1{
+    display: inline-block;
+    /* Makes the rectangle wrap the text */
+    background: rgba(210, 208, 208, 0.7);
+    /* Dark semi-transparent background */
+    color: rgb(0, 0, 0);
+    /* Ensures high contrast */
+    padding: 10px 15px;
+    /* Adds spacing inside the box */
+    border-radius: 5px;
+    /* Softens the edges */
+    font-size: 1.8em;
     /* Adjust size for readability */
 }
 
@@ -64,7 +79,6 @@ h3 {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-
 
 h1,
 h3,
