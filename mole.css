@@ -3,7 +3,7 @@ body {
     text-align: center;
     background-color: purple;
     background-image: url("./images/backdrop.png");
-    background-size: cover;
+    background-size: 110%;
     background-position: center;
     margin: 0;
     padding: 0;
